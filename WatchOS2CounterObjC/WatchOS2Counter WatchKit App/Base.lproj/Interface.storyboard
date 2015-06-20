@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8121.17" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8066.14"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <label width="1" height="32" alignment="left" text="0" textAlignment="center" id="XWD-OF-vZ0">
+                            <fontDescription key="font" type="system" pointSize="21"/>
+                        </label>
+                        <group width="1" alignment="left" id="qTJ-9h-8c6">
+                            <items>
+                                <button width="0.5" alignment="left" title="Hit" id="Rh7-h1-i1m">
+                                    <connections>
+                                        <action selector="incrementCounter" destination="AgC-eL-Hgc" id="PJq-wU-aNF"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="Clear" id="v4N-kg-juu">
+                                    <connections>
+                                        <action selector="clearCounter" destination="AgC-eL-Hgc" id="svc-OE-7my"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Save" id="Asg-uU-ByC">
+                            <connections>
+                                <action selector="saveCounter" destination="AgC-eL-Hgc" id="gLD-8b-t6B"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="counterLabel" destination="XWD-OF-vZ0" id="mXF-jV-Q4z"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="250" y="438"/>
+        </scene>
+    </scenes>
+</document>
