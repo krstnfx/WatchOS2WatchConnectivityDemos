@@ -1,5 +1,5 @@
-WatchOS 2 Counter App
+WatchOS 2 - Watch Connectivity Demos
 ===================
-Source code demoing maps on Apple Watch. Find the tutorial at http://www.kristinathai.com/watchkit-tutorial-maps-on-the-apple-watch
+Various demos for different ways of transfering data through the new Watch Connectivity framework.
 
-[![Counter Demo](https://github.com/kristinathai/WatchKitMaps/blob/master/map.png)](http://www.kristinathai.com/watchkit-tutorial-maps-on-the-apple-watch)
+For all of the messaging descriptions, visit this page: http://www.kristinathai.com/watchos-2-how-to-communicate-between-devices-using-watch-connectivity/
