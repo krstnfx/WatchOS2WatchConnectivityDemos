@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C207DC331B37546600134229 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C207DC321B37546600134229 /* main.m */; };
+		C207DC361B37546600134229 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C207DC351B37546600134229 /* AppDelegate.m */; };
+		C207DC391B37546600134229 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C207DC381B37546600134229 /* ViewController.m */; };
+		C207DC3C1B37546600134229 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C207DC3A1B37546600134229 /* Main.storyboard */; };
+		C207DC3E1B37546600134229 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C207DC3D1B37546600134229 /* Assets.xcassets */; };
+		C207DC411B37546600134229 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C207DC3F1B37546600134229 /* LaunchScreen.storyboard */; };
+		C207DC461B37546600134229 /* WatchOS2LastEmoji WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C207DC451B37546600134229 /* WatchOS2LastEmoji WatchKit App.app */; };
+		C207DC4C1B37546600134229 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C207DC4A1B37546600134229 /* Interface.storyboard */; };
+		C207DC4E1B37546600134229 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C207DC4D1B37546600134229 /* Assets.xcassets */; };
+		C207DC551B37546600134229 /* WatchOS2LastEmoji WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C207DC541B37546600134229 /* WatchOS2LastEmoji WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C207DC5B1B37546600134229 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = C207DC5A1B37546600134229 /* InterfaceController.m */; };
+		C207DC5E1B37546600134229 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C207DC5D1B37546600134229 /* ExtensionDelegate.m */; };
+		C207DC601B37546600134229 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C207DC5F1B37546600134229 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C207DC471B37546600134229 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C207DC261B37546600134229 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C207DC441B37546600134229;
+			remoteInfo = "WatchOS2LastEmoji WatchKit App";
+		};
+		C207DC561B37546600134229 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C207DC261B37546600134229 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C207DC531B37546600134229;
+			remoteInfo = "WatchOS2LastEmoji WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C207DC671B37546600134229 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C207DC551B37546600134229 /* WatchOS2LastEmoji WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C207DC6B1B37546600134229 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C207DC461B37546600134229 /* WatchOS2LastEmoji WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C207DC2E1B37546600134229 /* WatchOS2LastEmoji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchOS2LastEmoji.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C207DC321B37546600134229 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C207DC341B37546600134229 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C207DC351B37546600134229 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C207DC371B37546600134229 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C207DC381B37546600134229 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C207DC3B1B37546600134229 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C207DC3D1B37546600134229 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C207DC401B37546600134229 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C207DC421B37546600134229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C207DC451B37546600134229 /* WatchOS2LastEmoji WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchOS2LastEmoji WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C207DC4B1B37546600134229 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		C207DC4D1B37546600134229 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C207DC4F1B37546600134229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C207DC541B37546600134229 /* WatchOS2LastEmoji WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchOS2LastEmoji WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C207DC591B37546600134229 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		C207DC5A1B37546600134229 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		C207DC5C1B37546600134229 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		C207DC5D1B37546600134229 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		C207DC5F1B37546600134229 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C207DC611B37546600134229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C207DC2B1B37546600134229 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C207DC511B37546600134229 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C207DC251B37546600134229 = {
+			isa = PBXGroup;
+			children = (
+				C207DC301B37546600134229 /* WatchOS2LastEmoji */,
+				C207DC491B37546600134229 /* WatchOS2LastEmoji WatchKit App */,
+				C207DC581B37546600134229 /* WatchOS2LastEmoji WatchKit Extension */,
+				C207DC2F1B37546600134229 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C207DC2F1B37546600134229 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C207DC2E1B37546600134229 /* WatchOS2LastEmoji.app */,
+				C207DC451B37546600134229 /* WatchOS2LastEmoji WatchKit App.app */,
+				C207DC541B37546600134229 /* WatchOS2LastEmoji WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C207DC301B37546600134229 /* WatchOS2LastEmoji */ = {
+			isa = PBXGroup;
+			children = (
+				C207DC341B37546600134229 /* AppDelegate.h */,
+				C207DC351B37546600134229 /* AppDelegate.m */,
+				C207DC371B37546600134229 /* ViewController.h */,
+				C207DC381B37546600134229 /* ViewController.m */,
+				C207DC3A1B37546600134229 /* Main.storyboard */,
+				C207DC3D1B37546600134229 /* Assets.xcassets */,
+				C207DC3F1B37546600134229 /* LaunchScreen.storyboard */,
+				C207DC421B37546600134229 /* Info.plist */,
+				C207DC311B37546600134229 /* Supporting Files */,
+			);
+			path = WatchOS2LastEmoji;
+			sourceTree = "<group>";
+		};
+		C207DC311B37546600134229 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C207DC321B37546600134229 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C207DC491B37546600134229 /* WatchOS2LastEmoji WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				C207DC4A1B37546600134229 /* Interface.storyboard */,
+				C207DC4D1B37546600134229 /* Assets.xcassets */,
+				C207DC4F1B37546600134229 /* Info.plist */,
+			);
+			path = "WatchOS2LastEmoji WatchKit App";
+			sourceTree = "<group>";
+		};
+		C207DC581B37546600134229 /* WatchOS2LastEmoji WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C207DC591B37546600134229 /* InterfaceController.h */,
+				C207DC5A1B37546600134229 /* InterfaceController.m */,
+				C207DC5C1B37546600134229 /* ExtensionDelegate.h */,
+				C207DC5D1B37546600134229 /* ExtensionDelegate.m */,
+				C207DC5F1B37546600134229 /* Assets.xcassets */,
+				C207DC611B37546600134229 /* Info.plist */,
+			);
+			path = "WatchOS2LastEmoji WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C207DC2D1B37546600134229 /* WatchOS2LastEmoji */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C207DC6C1B37546600134229 /* Build configuration list for PBXNativeTarget "WatchOS2LastEmoji" */;
+			buildPhases = (
+				C207DC2A1B37546600134229 /* Sources */,
+				C207DC2B1B37546600134229 /* Frameworks */,
+				C207DC2C1B37546600134229 /* Resources */,
+				C207DC6B1B37546600134229 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C207DC481B37546600134229 /* PBXTargetDependency */,
+			);
+			name = WatchOS2LastEmoji;
+			productName = WatchOS2LastEmoji;
+			productReference = C207DC2E1B37546600134229 /* WatchOS2LastEmoji.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C207DC441B37546600134229 /* WatchOS2LastEmoji WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C207DC681B37546600134229 /* Build configuration list for PBXNativeTarget "WatchOS2LastEmoji WatchKit App" */;
+			buildPhases = (
+				C207DC431B37546600134229 /* Resources */,
+				C207DC671B37546600134229 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C207DC571B37546600134229 /* PBXTargetDependency */,
+			);
+			name = "WatchOS2LastEmoji WatchKit App";
+			productName = "WatchOS2LastEmoji WatchKit App";
+			productReference = C207DC451B37546600134229 /* WatchOS2LastEmoji WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C207DC531B37546600134229 /* WatchOS2LastEmoji WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C207DC641B37546600134229 /* Build configuration list for PBXNativeTarget "WatchOS2LastEmoji WatchKit Extension" */;
+			buildPhases = (
+				C207DC501B37546600134229 /* Sources */,
+				C207DC511B37546600134229 /* Frameworks */,
+				C207DC521B37546600134229 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchOS2LastEmoji WatchKit Extension";
+			productName = "WatchOS2LastEmoji WatchKit Extension";
+			productReference = C207DC541B37546600134229 /* WatchOS2LastEmoji WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C207DC261B37546600134229 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Kristina Thai";
+				TargetAttributes = {
+					C207DC2D1B37546600134229 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					C207DC441B37546600134229 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					C207DC531B37546600134229 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = C207DC291B37546600134229 /* Build configuration list for PBXProject "WatchOS2LastEmoji" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C207DC251B37546600134229;
+			productRefGroup = C207DC2F1B37546600134229 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C207DC2D1B37546600134229 /* WatchOS2LastEmoji */,
+				C207DC441B37546600134229 /* WatchOS2LastEmoji WatchKit App */,
+				C207DC531B37546600134229 /* WatchOS2LastEmoji WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C207DC2C1B37546600134229 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C207DC411B37546600134229 /* LaunchScreen.storyboard in Resources */,
+				C207DC3E1B37546600134229 /* Assets.xcassets in Resources */,
+				C207DC3C1B37546600134229 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C207DC431B37546600134229 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C207DC4E1B37546600134229 /* Assets.xcassets in Resources */,
+				C207DC4C1B37546600134229 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C207DC521B37546600134229 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C207DC601B37546600134229 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C207DC2A1B37546600134229 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C207DC391B37546600134229 /* ViewController.m in Sources */,
+				C207DC361B37546600134229 /* AppDelegate.m in Sources */,
+				C207DC331B37546600134229 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C207DC501B37546600134229 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C207DC5E1B37546600134229 /* ExtensionDelegate.m in Sources */,
+				C207DC5B1B37546600134229 /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C207DC481B37546600134229 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C207DC441B37546600134229 /* WatchOS2LastEmoji WatchKit App */;
+			targetProxy = C207DC471B37546600134229 /* PBXContainerItemProxy */;
+		};
+		C207DC571B37546600134229 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C207DC531B37546600134229 /* WatchOS2LastEmoji WatchKit Extension */;
+			targetProxy = C207DC561B37546600134229 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C207DC3A1B37546600134229 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C207DC3B1B37546600134229 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C207DC3F1B37546600134229 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C207DC401B37546600134229 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C207DC4A1B37546600134229 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C207DC4B1B37546600134229 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C207DC621B37546600134229 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C207DC631B37546600134229 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C207DC651B37546600134229 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "WatchOS2LastEmoji WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kristina.WatchOS2LastEmoji.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		C207DC661B37546600134229 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "WatchOS2LastEmoji WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kristina.WatchOS2LastEmoji.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		C207DC691B37546600134229 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				IBSC_MODULE = WatchOS2LastEmoji_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchOS2LastEmoji WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = kristina.WatchOS2LastEmoji.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		C207DC6A1B37546600134229 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				IBSC_MODULE = WatchOS2LastEmoji_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchOS2LastEmoji WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = kristina.WatchOS2LastEmoji.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		C207DC6D1B37546600134229 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WatchOS2LastEmoji/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kristina.WatchOS2LastEmoji;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C207DC6E1B37546600134229 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WatchOS2LastEmoji/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kristina.WatchOS2LastEmoji;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C207DC291B37546600134229 /* Build configuration list for PBXProject "WatchOS2LastEmoji" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C207DC621B37546600134229 /* Debug */,
+				C207DC631B37546600134229 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C207DC641B37546600134229 /* Build configuration list for PBXNativeTarget "WatchOS2LastEmoji WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C207DC651B37546600134229 /* Debug */,
+				C207DC661B37546600134229 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C207DC681B37546600134229 /* Build configuration list for PBXNativeTarget "WatchOS2LastEmoji WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C207DC691B37546600134229 /* Debug */,
+				C207DC6A1B37546600134229 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C207DC6C1B37546600134229 /* Build configuration list for PBXNativeTarget "WatchOS2LastEmoji" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C207DC6D1B37546600134229 /* Debug */,
+				C207DC6E1B37546600134229 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C207DC261B37546600134229 /* Project object */;
+}
