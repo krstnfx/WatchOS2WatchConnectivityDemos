@@ -45,7 +45,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Counter Table" id="h2D-Er-GTC"/>
                     <connections>
-                        <outlet property="mainTableView" destination="xgH-2r-u0C" id="qJf-c6-CKw"/>
+                        <outlet property="mainTableView" destination="xgH-2r-u0C" id="yer-Sg-0wL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

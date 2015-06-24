@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import <WatchConnectivity/WatchConnectivity.h>
 
-@interface ViewController () <WCSessionDelegate, UITableViewDataSource>
+@interface ViewController () <UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *mainTableView;
 @property (strong, nonatomic) NSMutableArray *counterData;
 @end
@@ -18,12 +18,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    if ([WCSession isSupported]) {
-        WCSession *session = [WCSession defaultSession];
-        session.delegate = self;
-        [session activateSession];
-    }
     
     if (!self.counterData) {
         self.counterData = [[NSMutableArray alloc] init];
@@ -44,21 +38,6 @@
     cell.textLabel.text = counterValueString;
     
     return cell;
-}
-
-- (void)session:(nonnull WCSession *)session didReceiveMessage:(nonnull NSDictionary<NSString *,id> *)message replyHandler:(nonnull void (^)(NSDictionary<NSString *,id> * __nonnull))replyHandler {
-    NSString *counterValue = [message objectForKey:@"counterValue"];
-    
-    if (!self.counterData) {
-        self.counterData = [[NSMutableArray alloc] init];
-    }
-    
-    //Use this to update the UI instantaneously (otherwise, takes a little while)
-    dispatch_async(dispatch_get_main_queue(), ^{
-        
-        [self.counterData addObject:counterValue];
-        [self.mainTableView reloadData];
-    });
 }
 
 @end

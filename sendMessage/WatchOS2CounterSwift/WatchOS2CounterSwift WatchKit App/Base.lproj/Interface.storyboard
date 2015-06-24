@@ -17,24 +17,24 @@
                             <items>
                                 <button width="0.5" alignment="left" title="Hit" id="HhD-W0-Vat">
                                     <connections>
-                                        <action selector="incrementCounter" destination="AgC-eL-Hgc" id="I15-pt-BI5"/>
+                                        <action selector="incrementCounter" destination="AgC-eL-Hgc" id="6Vx-LC-N8B"/>
                                     </connections>
                                 </button>
                                 <button width="0.5" alignment="left" title="Clear" id="ZRL-yU-U4O">
                                     <connections>
-                                        <action selector="clearCounter" destination="AgC-eL-Hgc" id="pv1-Yd-83P"/>
+                                        <action selector="clearCounter" destination="AgC-eL-Hgc" id="QuM-4c-Wau"/>
                                     </connections>
                                 </button>
                             </items>
                         </group>
                         <button width="1" alignment="left" title="Save" id="8Iq-Hb-vkX">
                             <connections>
-                                <action selector="saveCounter" destination="AgC-eL-Hgc" id="noa-tG-fZp"/>
+                                <action selector="saveCounter" destination="AgC-eL-Hgc" id="DjT-iR-xev"/>
                             </connections>
                         </button>
                     </items>
                     <connections>
-                        <outlet property="counterLabel" destination="35Q-c4-Jtj" id="4Jm-iI-Z1S"/>
+                        <outlet property="counterLabel" destination="35Q-c4-Jtj" id="R8B-ZV-iJq"/>
                     </connections>
                 </controller>
             </objects>

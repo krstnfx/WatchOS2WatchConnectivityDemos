@@ -54,7 +54,6 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         }, errorHandler: {(error ) -> Void in
             // catch any errors here
         })
-        
     }
     
     func setCounterLabelText() {
