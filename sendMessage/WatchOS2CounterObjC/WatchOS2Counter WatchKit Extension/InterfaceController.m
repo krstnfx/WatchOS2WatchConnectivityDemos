@@ -25,7 +25,6 @@
 
 - (void)willActivate {
     [super willActivate];
-    NSLog(@"%@ will activate", self);
     
     if ([WCSession isSupported]) {
         WCSession *session = [WCSession defaultSession];
@@ -39,6 +38,8 @@
 - (void)didDeactivate {
     [super didDeactivate];
 }
+
+#pragma mark IBOutlets for Watch interface
 
 - (IBAction)incrementCounter {
     self.counter++;
@@ -63,6 +64,8 @@
                                }
      ];
 }
+
+#pragma mark - Helper methods
 
 - (void)setCounterLabelText {
     [self.counterLabel setText:[NSString stringWithFormat:@"%d", self.counter]];

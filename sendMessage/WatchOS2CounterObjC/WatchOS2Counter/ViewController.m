@@ -57,10 +57,6 @@
         [self.counterData addObject:counterValue];
         [self.mainTableView reloadData];
     });
-    
-
-
 }
-
 
 @end

@@ -32,6 +32,8 @@ class ViewController: UIViewController, WCSessionDelegate {
             self.emojiLabel.text = "Last emoji: " + emoji!
         }
     }
+    
+    
 
 
 }
