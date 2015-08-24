@@ -14,6 +14,15 @@ import WatchConnectivity
 class InterfaceController: WKInterfaceController, WCSessionDelegate {
     
     var session : WCSession!
+    
+    override init() {
+        super.init()
+        if (WCSession.isSupported()) {
+            session = WCSession.defaultSession()
+            session.delegate = self
+            session.activateSession()
+        }
+    }
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -21,12 +30,6 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
 
     override func willActivate() {
         super.willActivate()
-        
-        if (WCSession.isSupported()) {
-            session = WCSession.defaultSession()
-            session.delegate = self
-            session.activateSession()
-        }
     }
 
     override func didDeactivate() {
