@@ -49,10 +49,11 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     @IBAction func saveCounter() {
         let applicationData = ["counterValue":String(counter)]
         
-        session.sendMessage(applicationData, replyHandler: {([String : AnyObject]) -> Void in
-            // handle reply from iPhone app here
-        }, errorHandler: {(error ) -> Void in
-            // catch any errors here
+        session.sendMessage(applicationData,
+            replyHandler: { replyData in
+                // handle reply from iPhone app here
+            }, errorHandler: { error in
+                // catch any errors here
         })
     }
     
