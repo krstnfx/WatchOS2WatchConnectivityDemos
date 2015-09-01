@@ -14,22 +14,25 @@ import WatchConnectivity
 class InterfaceController: WKInterfaceController, WCSessionDelegate {
     
     @IBOutlet var counterLabel: WKInterfaceLabel!
-    var counter = 0
-    var session : WCSession!
+    
+    private var counter = 0
+    
+    private let session : WCSession? = WCSession.isSupported() ? WCSession.defaultSession() : nil
     
 
+    override init() {
+        super.init()
+        
+        session?.delegate = self
+        session?.activateSession()
+    }
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
     }
 
     override func willActivate() {
         super.willActivate()
-        
-        if (WCSession.isSupported()) {
-            session = WCSession.defaultSession()
-            session.delegate = self
-            session.activateSession()
-        }
     }
 
     override func didDeactivate() {
@@ -47,17 +50,19 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     }
     
     @IBAction func saveCounter() {
-        let applicationData = ["counterValue":String(counter)]
+        let applicationData = ["counterValue" : counter]
         
-        session.sendMessage(applicationData,
+        session?.sendMessage(applicationData,
             replyHandler: { replyData in
                 // handle reply from iPhone app here
+                print(replyData)
             }, errorHandler: { error in
                 // catch any errors here
+                print(error)
         })
     }
     
-    func setCounterLabelText() {
+    private func setCounterLabelText() {
         counterLabel.setText(String(counter))
     }
     
