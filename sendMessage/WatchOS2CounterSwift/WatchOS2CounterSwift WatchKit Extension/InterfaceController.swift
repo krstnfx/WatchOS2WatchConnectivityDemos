@@ -49,12 +49,19 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     @IBAction func saveCounter() {
         let applicationData = ["counterValue":String(counter)]
         
-        session.sendMessage(applicationData,
-            replyHandler: { replyData in
-                // handle reply from iPhone app here
-            }, errorHandler: { error in
-                // catch any errors here
-        })
+        // The paired iPhone has to be connected via Bluetooth.
+        if let session = session where session.reachable {
+            session.sendMessage(applicationData,
+                replyHandler: { replyData in
+                    // handle reply from iPhone app here
+                    print(replyData)
+                }, errorHandler: { error in
+                    // catch any errors here
+                    print(error)
+            })
+        } else {
+            // when the iPhone is not connected via Bluetooth
+        }
     }
     
     func setCounterLabelText() {
