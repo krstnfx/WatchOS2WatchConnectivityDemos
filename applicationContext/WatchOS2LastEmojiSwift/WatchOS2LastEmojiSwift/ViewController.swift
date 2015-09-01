@@ -12,16 +12,24 @@ import WatchConnectivity
 class ViewController: UIViewController, WCSessionDelegate {
 
     @IBOutlet weak var emojiLabel: UILabel!
-    var session : WCSession!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    private let session: WCSession? = WCSession.isSupported() ? WCSession.defaultSession() : nil
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
         
-        if (WCSession.isSupported()) {
-            session = WCSession.defaultSession()
-            session.delegate = self;
-            session.activateSession()
-        }
+        configureWCSession()
+    }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        
+        configureWCSession()
+    }
+    
+    private func configureWCSession() {
+        session?.delegate = self;
+        session?.activateSession()
     }
 
     func session(session: WCSession, didReceiveApplicationContext applicationContext: [String : AnyObject]) {
@@ -29,12 +37,10 @@ class ViewController: UIViewController, WCSessionDelegate {
         
         //Use this to update the UI instantaneously (otherwise, takes a little while)
         dispatch_async(dispatch_get_main_queue()) {
-            self.emojiLabel.text = "Last emoji: " + emoji!
+            if let emoji = emoji {
+                self.emojiLabel.text = "Last emoji: \(emoji)"
+            }
         }
     }
-    
-    
-
-
 }
 
