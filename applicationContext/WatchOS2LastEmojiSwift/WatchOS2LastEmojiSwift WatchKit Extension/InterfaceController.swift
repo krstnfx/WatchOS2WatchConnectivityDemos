@@ -13,15 +13,13 @@ import WatchConnectivity
 
 class InterfaceController: WKInterfaceController, WCSessionDelegate {
     
-    var session : WCSession!
+    private let session: WCSession? = WCSession.isSupported() ? WCSession.defaultSession() : nil
     
     override init() {
         super.init()
-        if (WCSession.isSupported()) {
-            session = WCSession.defaultSession()
-            session.delegate = self
-            session.activateSession()
-        }
+        
+        session?.delegate = self
+        session?.activateSession()
     }
 
     override func awakeWithContext(context: AnyObject?) {
@@ -61,9 +59,9 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     }
     
     func sendEmoji(emoji: String){
-        let applicationDict = ["emoji":emoji]
+        let applicationDict = ["emoji" : emoji]
         do {
-            try session.updateApplicationContext(applicationDict)
+            try session?.updateApplicationContext(applicationDict)
         } catch {
             print("error")
         }
