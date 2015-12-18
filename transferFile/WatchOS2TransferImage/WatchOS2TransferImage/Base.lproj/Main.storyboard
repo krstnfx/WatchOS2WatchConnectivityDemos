@@ -9,7 +9,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WatchOS2TransferImageSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -18,28 +18,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdK-6e-EDZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Bn-Ru-NwL">
                                 <rect key="frame" x="265" y="289" width="70" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g2R-5q-KNN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EKi-I7-ZEb">
                                 <rect key="frame" x="20" y="20" width="560" height="580"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="g2R-5q-KNN" secondAttribute="bottom" id="4bY-Iw-rsr"/>
-                            <constraint firstItem="g2R-5q-KNN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="mrs-tx-1Ch"/>
-                            <constraint firstItem="bdK-6e-EDZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sEw-no-3t5"/>
-                            <constraint firstItem="bdK-6e-EDZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sPK-8g-ZH3"/>
-                            <constraint firstItem="g2R-5q-KNN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xmp-kv-c7w"/>
-                            <constraint firstItem="g2R-5q-KNN" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="yFb-u5-qRH"/>
+                            <constraint firstItem="5Bn-Ru-NwL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AVE-IX-BMI"/>
+                            <constraint firstItem="EKi-I7-ZEb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Cpz-wi-ZAL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EKi-I7-ZEb" secondAttribute="bottom" id="OOY-NY-BBW"/>
+                            <constraint firstItem="EKi-I7-ZEb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="d2W-Wa-bJg"/>
+                            <constraint firstItem="5Bn-Ru-NwL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gtW-Sl-UW6"/>
+                            <constraint firstItem="EKi-I7-ZEb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="o8O-CB-Bfk"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="loadingLabel" destination="bdK-6e-EDZ" id="IVb-kU-7lo"/>
+                        <outlet property="imageView" destination="EKi-I7-ZEb" id="QsF-xo-YmM"/>
+                        <outlet property="loadingLabel" destination="5Bn-Ru-NwL" id="QgC-hw-n7l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
