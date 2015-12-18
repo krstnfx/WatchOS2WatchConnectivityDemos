@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C2ABCB041C24BBE800738057 /* dogs.png in Resources */ = {isa = PBXBuildFile; fileRef = C2ABCB031C24BBE800738057 /* dogs.png */; };
+		C2B7D6761C15297E0085F00D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B7D6751C15297E0085F00D /* AppDelegate.swift */; };
+		C2B7D6781C15297E0085F00D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B7D6771C15297E0085F00D /* ViewController.swift */; };
+		C2B7D67B1C15297E0085F00D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2B7D6791C15297E0085F00D /* Main.storyboard */; };
+		C2B7D67D1C15297E0085F00D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2B7D67C1C15297E0085F00D /* Assets.xcassets */; };
+		C2B7D6801C15297E0085F00D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2B7D67E1C15297E0085F00D /* LaunchScreen.storyboard */; };
+		C2B7D6851C15297E0085F00D /* WatchOS2TransferImageSwift WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C2B7D6841C15297E0085F00D /* WatchOS2TransferImageSwift WatchKit App.app */; };
+		C2B7D68B1C15297E0085F00D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2B7D6891C15297E0085F00D /* Interface.storyboard */; };
+		C2B7D68D1C15297E0085F00D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2B7D68C1C15297E0085F00D /* Assets.xcassets */; };
+		C2B7D6941C15297E0085F00D /* WatchOS2TransferImageSwift WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C2B7D6931C15297E0085F00D /* WatchOS2TransferImageSwift WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C2B7D6991C15297E0085F00D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B7D6981C15297E0085F00D /* InterfaceController.swift */; };
+		C2B7D69B1C15297E0085F00D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B7D69A1C15297E0085F00D /* ExtensionDelegate.swift */; };
+		C2B7D69D1C15297E0085F00D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2B7D69C1C15297E0085F00D /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C2B7D6861C15297E0085F00D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2B7D66A1C15297E0085F00D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2B7D6831C15297E0085F00D;
+			remoteInfo = "WatchOS2TransferImageSwift WatchKit App";
+		};
+		C2B7D6951C15297E0085F00D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2B7D66A1C15297E0085F00D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2B7D6921C15297E0085F00D;
+			remoteInfo = "WatchOS2TransferImageSwift WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C2B7D6A41C15297E0085F00D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C2B7D6941C15297E0085F00D /* WatchOS2TransferImageSwift WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2B7D6A81C15297E0085F00D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C2B7D6851C15297E0085F00D /* WatchOS2TransferImageSwift WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C2ABCB031C24BBE800738057 /* dogs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dogs.png; sourceTree = "<group>"; };
+		C2B7D6721C15297E0085F00D /* WatchOS2TransferImageSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchOS2TransferImageSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2B7D6751C15297E0085F00D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C2B7D6771C15297E0085F00D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C2B7D67A1C15297E0085F00D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C2B7D67C1C15297E0085F00D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C2B7D67F1C15297E0085F00D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C2B7D6811C15297E0085F00D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2B7D6841C15297E0085F00D /* WatchOS2TransferImageSwift WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchOS2TransferImageSwift WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2B7D68A1C15297E0085F00D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		C2B7D68C1C15297E0085F00D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C2B7D68E1C15297E0085F00D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2B7D6931C15297E0085F00D /* WatchOS2TransferImageSwift WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchOS2TransferImageSwift WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2B7D6981C15297E0085F00D /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		C2B7D69A1C15297E0085F00D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		C2B7D69C1C15297E0085F00D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C2B7D69E1C15297E0085F00D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2B7D66F1C15297E0085F00D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2B7D6901C15297E0085F00D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2B7D6691C15297E0085F00D = {
+			isa = PBXGroup;
+			children = (
+				C2B7D6741C15297E0085F00D /* WatchOS2TransferImageSwift */,
+				C2B7D6881C15297E0085F00D /* WatchOS2TransferImageSwift WatchKit App */,
+				C2B7D6971C15297E0085F00D /* WatchOS2TransferImageSwift WatchKit Extension */,
+				C2B7D6731C15297E0085F00D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2B7D6731C15297E0085F00D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2B7D6721C15297E0085F00D /* WatchOS2TransferImageSwift.app */,
+				C2B7D6841C15297E0085F00D /* WatchOS2TransferImageSwift WatchKit App.app */,
+				C2B7D6931C15297E0085F00D /* WatchOS2TransferImageSwift WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2B7D6741C15297E0085F00D /* WatchOS2TransferImageSwift */ = {
+			isa = PBXGroup;
+			children = (
+				C2B7D6751C15297E0085F00D /* AppDelegate.swift */,
+				C2B7D6771C15297E0085F00D /* ViewController.swift */,
+				C2B7D6791C15297E0085F00D /* Main.storyboard */,
+				C2B7D67C1C15297E0085F00D /* Assets.xcassets */,
+				C2B7D67E1C15297E0085F00D /* LaunchScreen.storyboard */,
+				C2B7D6811C15297E0085F00D /* Info.plist */,
+			);
+			path = WatchOS2TransferImageSwift;
+			sourceTree = "<group>";
+		};
+		C2B7D6881C15297E0085F00D /* WatchOS2TransferImageSwift WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				C2B7D6891C15297E0085F00D /* Interface.storyboard */,
+				C2B7D68C1C15297E0085F00D /* Assets.xcassets */,
+				C2B7D68E1C15297E0085F00D /* Info.plist */,
+			);
+			path = "WatchOS2TransferImageSwift WatchKit App";
+			sourceTree = "<group>";
+		};
+		C2B7D6971C15297E0085F00D /* WatchOS2TransferImageSwift WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C2B7D6981C15297E0085F00D /* InterfaceController.swift */,
+				C2B7D69A1C15297E0085F00D /* ExtensionDelegate.swift */,
+				C2B7D69C1C15297E0085F00D /* Assets.xcassets */,
+				C2ABCB031C24BBE800738057 /* dogs.png */,
+				C2B7D69E1C15297E0085F00D /* Info.plist */,
+			);
+			path = "WatchOS2TransferImageSwift WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2B7D6711C15297E0085F00D /* WatchOS2TransferImageSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2B7D6A91C15297E0085F00D /* Build configuration list for PBXNativeTarget "WatchOS2TransferImageSwift" */;
+			buildPhases = (
+				C2B7D66E1C15297E0085F00D /* Sources */,
+				C2B7D66F1C15297E0085F00D /* Frameworks */,
+				C2B7D6701C15297E0085F00D /* Resources */,
+				C2B7D6A81C15297E0085F00D /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2B7D6871C15297E0085F00D /* PBXTargetDependency */,
+			);
+			name = WatchOS2TransferImageSwift;
+			productName = WatchOS2TransferImageSwift;
+			productReference = C2B7D6721C15297E0085F00D /* WatchOS2TransferImageSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C2B7D6831C15297E0085F00D /* WatchOS2TransferImageSwift WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2B7D6A51C15297E0085F00D /* Build configuration list for PBXNativeTarget "WatchOS2TransferImageSwift WatchKit App" */;
+			buildPhases = (
+				C2B7D6821C15297E0085F00D /* Resources */,
+				C2B7D6A41C15297E0085F00D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2B7D6961C15297E0085F00D /* PBXTargetDependency */,
+			);
+			name = "WatchOS2TransferImageSwift WatchKit App";
+			productName = "WatchOS2TransferImageSwift WatchKit App";
+			productReference = C2B7D6841C15297E0085F00D /* WatchOS2TransferImageSwift WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C2B7D6921C15297E0085F00D /* WatchOS2TransferImageSwift WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2B7D6A11C15297E0085F00D /* Build configuration list for PBXNativeTarget "WatchOS2TransferImageSwift WatchKit Extension" */;
+			buildPhases = (
+				C2B7D68F1C15297E0085F00D /* Sources */,
+				C2B7D6901C15297E0085F00D /* Frameworks */,
+				C2B7D6911C15297E0085F00D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchOS2TransferImageSwift WatchKit Extension";
+			productName = "WatchOS2TransferImageSwift WatchKit Extension";
+			productReference = C2B7D6931C15297E0085F00D /* WatchOS2TransferImageSwift WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2B7D66A1C15297E0085F00D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Thai, Kristina";
+				TargetAttributes = {
+					C2B7D6711C15297E0085F00D = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					C2B7D6831C15297E0085F00D = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					C2B7D6921C15297E0085F00D = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = C2B7D66D1C15297E0085F00D /* Build configuration list for PBXProject "WatchOS2TransferImageSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C2B7D6691C15297E0085F00D;
+			productRefGroup = C2B7D6731C15297E0085F00D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2B7D6711C15297E0085F00D /* WatchOS2TransferImageSwift */,
+				C2B7D6831C15297E0085F00D /* WatchOS2TransferImageSwift WatchKit App */,
+				C2B7D6921C15297E0085F00D /* WatchOS2TransferImageSwift WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2B7D6701C15297E0085F00D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2B7D6801C15297E0085F00D /* LaunchScreen.storyboard in Resources */,
+				C2B7D67D1C15297E0085F00D /* Assets.xcassets in Resources */,
+				C2B7D67B1C15297E0085F00D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2B7D6821C15297E0085F00D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2B7D68D1C15297E0085F00D /* Assets.xcassets in Resources */,
+				C2B7D68B1C15297E0085F00D /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2B7D6911C15297E0085F00D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2ABCB041C24BBE800738057 /* dogs.png in Resources */,
+				C2B7D69D1C15297E0085F00D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2B7D66E1C15297E0085F00D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2B7D6781C15297E0085F00D /* ViewController.swift in Sources */,
+				C2B7D6761C15297E0085F00D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2B7D68F1C15297E0085F00D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2B7D69B1C15297E0085F00D /* ExtensionDelegate.swift in Sources */,
+				C2B7D6991C15297E0085F00D /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C2B7D6871C15297E0085F00D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2B7D6831C15297E0085F00D /* WatchOS2TransferImageSwift WatchKit App */;
+			targetProxy = C2B7D6861C15297E0085F00D /* PBXContainerItemProxy */;
+		};
+		C2B7D6961C15297E0085F00D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2B7D6921C15297E0085F00D /* WatchOS2TransferImageSwift WatchKit Extension */;
+			targetProxy = C2B7D6951C15297E0085F00D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C2B7D6791C15297E0085F00D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2B7D67A1C15297E0085F00D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C2B7D67E1C15297E0085F00D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2B7D67F1C15297E0085F00D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C2B7D6891C15297E0085F00D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2B7D68A1C15297E0085F00D /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C2B7D69F1C15297E0085F00D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C2B7D6A01C15297E0085F00D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C2B7D6A21C15297E0085F00D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "WatchOS2TransferImageSwift WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kristina.WatchOS2TransferImageSwift.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		C2B7D6A31C15297E0085F00D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "WatchOS2TransferImageSwift WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kristina.WatchOS2TransferImageSwift.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		C2B7D6A61C15297E0085F00D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WatchOS2TransferImageSwift_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchOS2TransferImageSwift WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = kristina.WatchOS2TransferImageSwift.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		C2B7D6A71C15297E0085F00D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WatchOS2TransferImageSwift_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchOS2TransferImageSwift WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = kristina.WatchOS2TransferImageSwift.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		C2B7D6AA1C15297E0085F00D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WatchOS2TransferImageSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kristina.WatchOS2TransferImageSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C2B7D6AB1C15297E0085F00D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WatchOS2TransferImageSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kristina.WatchOS2TransferImageSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2B7D66D1C15297E0085F00D /* Build configuration list for PBXProject "WatchOS2TransferImageSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2B7D69F1C15297E0085F00D /* Debug */,
+				C2B7D6A01C15297E0085F00D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2B7D6A11C15297E0085F00D /* Build configuration list for PBXNativeTarget "WatchOS2TransferImageSwift WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2B7D6A21C15297E0085F00D /* Debug */,
+				C2B7D6A31C15297E0085F00D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2B7D6A51C15297E0085F00D /* Build configuration list for PBXNativeTarget "WatchOS2TransferImageSwift WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2B7D6A61C15297E0085F00D /* Debug */,
+				C2B7D6A71C15297E0085F00D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2B7D6A91C15297E0085F00D /* Build configuration list for PBXNativeTarget "WatchOS2TransferImageSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2B7D6AA1C15297E0085F00D /* Debug */,
+				C2B7D6AB1C15297E0085F00D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2B7D66A1C15297E0085F00D /* Project object */;
+}

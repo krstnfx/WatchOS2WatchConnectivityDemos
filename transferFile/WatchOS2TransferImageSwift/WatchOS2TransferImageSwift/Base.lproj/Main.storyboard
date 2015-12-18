@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WatchOS2TransferImageSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdK-6e-EDZ">
+                                <rect key="frame" x="265" y="289" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KAk-2X-JhS">
+                                <rect key="frame" x="20" y="20" width="560" height="560"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KAk-2X-JhS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7ZO-ic-bs9"/>
+                            <constraint firstItem="KAk-2X-JhS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="IMH-E0-9Yr"/>
+                            <constraint firstItem="KAk-2X-JhS" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="TAm-3K-YWA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KAk-2X-JhS" secondAttribute="bottom" constant="20" id="WaF-YW-pSD"/>
+                            <constraint firstItem="bdK-6e-EDZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sEw-no-3t5"/>
+                            <constraint firstItem="bdK-6e-EDZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sPK-8g-ZH3"/>
+                            <constraint firstItem="KAk-2X-JhS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v0h-hW-1fX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="KAk-2X-JhS" id="d97-5V-ny1"/>
+                        <outlet property="loadingLabel" destination="bdK-6e-EDZ" id="IVb-kU-7lo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="327" y="429"/>
+        </scene>
+    </scenes>
+</document>
