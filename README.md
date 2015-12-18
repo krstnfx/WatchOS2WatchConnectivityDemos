@@ -10,9 +10,10 @@ Various demos for different ways of transfering data through the new Watch Conne
 
 ![counter app](https://github.com/kristinathai/WatchOS2WatchConnectivityDemos/blob/master/counter.png)
 
-transferUserInfo - TBD
 
-transferFile - TBD
+[transferFile](https://github.com/kristinathai/WatchOS2WatchConnectivityDemos/tree/master/transferFile): SendDogs app - passes an image stored in the watch extension to the parent app
+
+![counter app](https://github.com/kristinathai/WatchOS2WatchConnectivityDemos/blob/master/dogs.png)
 
 For all of the messaging descriptions and when to use them, visit [this page](http://www.kristinathai.com/watchos-2-how-to-communicate-between-devices-using-watch-connectivity/). 
 
