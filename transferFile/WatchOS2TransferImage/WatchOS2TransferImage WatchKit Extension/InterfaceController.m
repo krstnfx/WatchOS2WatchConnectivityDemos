@@ -31,10 +31,8 @@
 }
 
 - (IBAction)sendDogs {
-    if ([self.session isReachable]) {
-        NSURL *filePath = [[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] pathForResource:@"dogs" ofType:@"png"]];
-        [self.session transferFile:filePath metadata:nil];
-    }
+    NSURL *filePath = [[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] pathForResource:@"dogs" ofType:@"png"]];
+    [self.session transferFile:filePath metadata:nil];
 }
 
 -(void)session:(WCSession *)session didFinishFileTransfer:(WCSessionFileTransfer *)fileTransfer error:(NSError *)error {

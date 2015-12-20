@@ -22,11 +22,8 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     }
     
     @IBAction func sendDogs() {
-        if ((session?.reachable) != nil) {
-            let filePath = NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("dogs", ofType: "png")!)
-            self.session?.transferFile(filePath, metadata: nil)
-        }
-        
+        let filePath = NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("dogs", ofType: "png")!)
+        self.session?.transferFile(filePath, metadata: nil)
     }
     
     func session(session: WCSession, didFinishFileTransfer fileTransfer: WCSessionFileTransfer, error: NSError?) {
