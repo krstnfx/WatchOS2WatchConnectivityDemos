@@ -12,18 +12,24 @@ import WatchConnectivity
 
 
 class InterfaceController: WKInterfaceController, WCSessionDelegate {
+    /** Called when the session has completed activation. If session state is WCSessionActivationStateNotActivated there will be an error with more details. */
+    @available(watchOS 2.2, *)
+    public func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        //Dummy Implementation
+    }
+
     
-    private let session: WCSession? = WCSession.isSupported() ? WCSession.defaultSession() : nil
+    fileprivate let session: WCSession? = WCSession.isSupported() ? WCSession.default() : nil
     
     override init() {
         super.init()
         
         session?.delegate = self
-        session?.activateSession()
+        session?.activate()
     }
 
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
     }
 
     override func willActivate() {
@@ -58,7 +64,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         sendEmoji("hamster")
     }
     
-    func sendEmoji(emoji: String){
+    func sendEmoji(_ emoji: String){
         let applicationDict = ["emoji" : emoji]
         do {
             try session?.updateApplicationContext(applicationDict)
