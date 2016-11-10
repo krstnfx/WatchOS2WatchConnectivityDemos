@@ -33,6 +33,8 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     }
     
     func session(_ session: WCSession, didFinish fileTransfer: WCSessionFileTransfer, error: Error?) {
-        print("error: ", error)
+        if (error != nil) {
+            print("error")
+        }
     }
 }
