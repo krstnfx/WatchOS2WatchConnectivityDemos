@@ -12,23 +12,29 @@ import WatchConnectivity
 
 
 class InterfaceController: WKInterfaceController, WCSessionDelegate {
+    /** Called when the session has completed activation. If session state is WCSessionActivationStateNotActivated there will be an error with more details. */
+    @available(watchOS 2.2, *)
+    public func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        //Dummy Implementation
+    }
+
     
     @IBOutlet var counterLabel: WKInterfaceLabel!
     
-    private var counter = 0
+    fileprivate var counter = 0
     
-    private let session : WCSession? = WCSession.isSupported() ? WCSession.defaultSession() : nil
+    fileprivate let session : WCSession? = WCSession.isSupported() ? WCSession.default() : nil
     
 
     override init() {
         super.init()
         
         session?.delegate = self
-        session?.activateSession()
+        session?.activate()
     }
     
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
     }
 
     override func willActivate() {
@@ -40,7 +46,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     }
 
     @IBAction func incrementCounter() {
-        counter++
+        counter += 1
         setCounterLabelText()
     }
     
@@ -53,7 +59,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         let applicationData = ["counterValue" : counter]
         
         // The paired iPhone has to be connected via Bluetooth.
-        if let session = session where session.reachable {
+        if let session = session, session.isReachable {
             session.sendMessage(applicationData,
                 replyHandler: { replyData in
                     // handle reply from iPhone app here
@@ -67,7 +73,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         }
     }
     
-    private func setCounterLabelText() {
+    fileprivate func setCounterLabelText() {
         counterLabel.setText(String(counter))
     }
     
